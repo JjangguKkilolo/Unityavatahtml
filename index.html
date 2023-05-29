@@ -22,9 +22,9 @@
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">avata</div>
       </div>
-      <div id = "main" ><select onchange="f(this.value); f1(); f2();">
+    </div>
+    <div id = "main" ><select onchange="f(this.value); f1(); f2();">
         <option value = ""></option>
-        <option value = "0">0</option>
         <option value = "1">1</option>
         <option value = "2">2</option>
         <option value = "3">3</option>
@@ -124,11 +124,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Unityavata.loader.js";
+      var loaderUrl = buildUrl + "/Unityavata3.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Unityavata.data",
-        frameworkUrl: buildUrl + "/Unityavata.framework.js",
-        codeUrl: buildUrl + "/Unityavata.wasm",
+        dataUrl: buildUrl + "/Unityavata3.data",
+        frameworkUrl: buildUrl + "/Unityavata3.framework.js",
+        codeUrl: buildUrl + "/Unityavata3.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "avata",
@@ -183,7 +183,7 @@
         });
       };
       document.body.appendChild(script);
-      
+
 
       var value1, value2, value3 = null;
       function f(value){
